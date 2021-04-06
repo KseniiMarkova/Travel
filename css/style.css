@@ -459,3 +459,5 @@ body{
     background: url(../img/intro-bg.jpg), no-repeat center; /*не будет повторяться и по центру*/
     background-size: cover;/*картинка будет покрывать блок при любых его размерах*/
 }
+
+/*Intro style end*/
