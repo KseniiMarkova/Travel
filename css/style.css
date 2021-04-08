@@ -455,7 +455,7 @@ body{
 
 /*Intro style start*/
 .intro{
-    height: 100vh; /*высота = 100% высоты экрана*/
+    min-height: 100vh; /*высота = 100% высоты экрана, для последующей адаптивности*/
     background: url(../img/intro-bg.jpg), no-repeat center; /*не будет повторяться и по центру*/
     background-size: cover; /*картинка будет покрывать блок при любых его размерах*/
     padding-top: 263px;
@@ -476,4 +476,44 @@ body{
     margin-bottom: 59px;
 }
 
+.search-form__info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-form__field{
+    width: 297px;
+    /*background-color: transparent; - обнуление background-color, при этом можно передавать сразу в background*/
+    background: transparent url(../img/svg/circle-icon.svg) no-repeat left 6px;
+    background-size: 20px;
+    border: 0;
+    border-bottom: 2px solid #BFC0C5;
+    margin-right: 60px; /*отступы между элементами*/
+    padding-left: 43px;
+    padding-bottom: 22px;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+}
+
+.search-form__field::placeholder{
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+}
+
+.search-form__submite{
+    padding: 15px 39px;
+    text-transform: uppercase;/*текст заглавными буквами*/
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    background: #1B7DFF;
+    border: 0;
+}
+
+/*эффекты для кнопки*/
+.search-form__submite:hover, .search-form__submite:focus, .search-form__submite:active{
+    background: #0b73f1;
+}
 /*Intro style end*/
