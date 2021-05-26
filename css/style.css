@@ -421,6 +421,31 @@ img{
 	max-width: 1100px;
 	margin: 0 auto;
 }
+
+.wrapper-full{
+	max-width: 1262px;
+	margin: 0 auto;
+}
+
+.section-title{
+	font-weight: 500;
+	font-size: 35px;
+	line-height: 42px;
+	position: relative; /*позиционирование на родителе*/
+	padding-bottom: 10px;
+}
+
+.section-title::after{
+	display: block;
+	content: ''; /*обязательно должен присутствовать, чтобы псевдоэлемент появился на странице*/
+	width: 253px;
+	height: 3px;
+	background-color: #006DFE;
+	position: absolute;/*позиционирование снизу*/
+	bottom: 0;
+	left: 0;
+}
+
 /*header start style*/
 .header{
 	position: fixed;/*зафиксировать элемент в области просмотра*/
@@ -594,7 +619,7 @@ img{
 	line-height: 24px;
 	color: #006DFE;
 	text-decoration: none;/*убрать черту под ссылкой*/
-	background: url(../img/svg/arrow-icon.svg) no-repeat 95% center; /*указан в качестве background, но можно сделать через псевдоэлемент*/
+	background: url(../img/svg/arrow-icon.svg) no-repeat 95% center; /*указан в качестве background, но можно сделать через псевдоэлемент, с анимацией*/
 	transition: .2s all; /*делает более плавный сдвиг срелки*/
 }
 
@@ -602,3 +627,34 @@ img{
 	background: url(../img/svg/arrow-icon.svg) no-repeat right center;
 }
 /*Benefits style end*/
+
+/*Places style start*/
+.places__caption{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 46px;
+}
+
+.places__title{
+	margin-right: 15px;
+}
+
+.places__view-all{
+	font-size: 16px;
+	color: #006DFE;
+	text-decoration: none;
+	padding-right: 59px;
+	background: url(../img/svg/arrow-icon.svg) no-repeat right center;
+}
+.places__view-all:hover, .places__view-all:focus{
+	opacity: .65;
+}
+
+.places__cards{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 10px;
+}
+/*Places style end*/
