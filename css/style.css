@@ -490,6 +490,7 @@ img{
 	background: url(../img/intro-bg.jpg), no-repeat center; /*не будет повторяться и по центру*/
 	background-size: cover; /*картинка будет покрывать блок при любых его размерах*/
 	padding-top: 263px;
+	padding-bottom: 223px; /*обезопасили контент заголовка benefits от перекрытия контентом intro*/
 }
 .intro__title{
 	max-width: 619px;
@@ -629,6 +630,11 @@ img{
 /*Benefits style end*/
 
 /*Places style start*/
+
+.places{
+	margin-bottom: 131px; /*создаем отступ*/
+}
+
 .places__caption{
 	display: flex;
 	flex-wrap: wrap;
@@ -657,4 +663,65 @@ img{
 	grid-template-columns: repeat(6, 1fr);
 	grid-gap: 10px;
 }
+
+.places__card{
+	position: relative;
+	overflow: hidden; /*тобы картинка при наведении и увеличении не выходила за указанные рамки*/
+}
+
+.places__card:hover .places__card-pic{
+	transform: scale(1.05); /*при наведении на картинку она увеличивается в размере*/
+}
+
+.places__card::after{ /*псевдоэлемент, можно использовать before*/
+	display: block;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-color: rgba(21, 24, 36, 0.4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.places__card-title{
+	font-size: 50px;
+	line-height: 60px;
+	color: #FFFFFF;
+	position: absolute;
+	bottom: 27px;
+	left: 29px;
+	z-index: 3;
+}
+
+.places__card-size-lg{
+	grid-column: span 3;
+}
+.places__card-size-sm{
+	grid-column: span 2;
+}
+
+.places__card-pic{
+	width: 100%; 	/*еще один вариант:-  transform: scale();, но при этом для контейнера places__card прописать:- 	overflow: hidden;*/
+	object-fit: cover; /*как объект будет масштабироваться внутри контейнера*/
+	transition: .15s all; /*для плавного увеличения картинок*/
+}
+
+.places__card-pic-size-lg{
+	height: 354px; /*жесткое указание высоты*/
+}
+.places__card-pic-size-sm{
+	height: 283px; /*жесткое указание высоты*/
+}
+
+.places__card-link{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 4; /*самый верхний слой у на card*/
+}
+
 /*Places style end*/
