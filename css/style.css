@@ -630,7 +630,6 @@ img{
 /*Benefits style end*/
 
 /*Places style start*/
-
 .places{
 	margin-bottom: 131px; /*создаем отступ*/
 }
@@ -723,11 +722,9 @@ img{
 	height: 100%;
 	z-index: 4; /*самый верхний слой у на card*/
 }
-
 /*Places style end*/
 
 /*Tours style start*/
-
 .tours{
 	margin-bottom: 139px;
 }
@@ -735,7 +732,7 @@ img{
 .tours__tour{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 0 108px;
+	grid-gap: 0 108px; /* расстояние между элементами: 0 - горизонталь, 108 - вертикаль */
 	align-items: center; /*выравнивание элементов вертикально по центру*/
 	margin-bottom: 77px;
 }
@@ -767,5 +764,91 @@ img{
 .tour__link:hover, .tour__link:focus{
 	opacity: .65;
 }
-
 /*Tours style end*/
+
+/*Top places style start*/
+.top{
+	margin-bottom: 86px;
+}
+
+.top__title{
+	margin-bottom: 54px;
+}
+
+.top__cards{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 57px; /*расстояние между grid*/
+}
+
+.top__card-pic{
+	position: relative;
+	margin-bottom: 45px;
+}
+
+.top__card{ /*для изменения оси распределения элементов*/
+	display: flex;
+	flex-direction: column;
+}
+
+.top__card-stats{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-end;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(21, 24, 36, 0.6);
+	padding: 16px 25px;
+}
+
+.top__card-title{
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	color: #FFFFFF;
+	margin: 0 auto 0 0;
+}
+
+.top__card-likes{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: #FFFFFF;
+	padding-right: 20px;
+	background: url(../img/svg/heart-ico.svg) no-repeat right; /*можно через псевдоэлемент*/
+	margin-right: 14px;
+}
+
+.top__card-comments{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: #FFFFFF;
+	padding-right: 23px;
+	background: url(../img/svg/comment-ico.svg) no-repeat right;
+}
+
+.top__card-desc{
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 31px;
+}
+
+.top__card-more{
+	width: 118px; /*можно flex-basis: px;, но в данном случаи мы изменили ось распределения элементов, потому через width*/
+	padding: 12px 19px; /*сверху-снизу 12, справа-слева 19*/
+	background-color: #006DFE;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 16px;
+	line-height: 19px;
+	margin: auto 0 0 0; /*для расположения кнопки всегда снизу, вне зависимости от текста*/
+}
+
+.top__card-more:hover, .top__card-more:focus, .top__card-more:active{
+	background: #0b73f1;
+}
+/*Top places style end*/
