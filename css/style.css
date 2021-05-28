@@ -452,6 +452,12 @@ img{
 	top: 0;/*header в верхней части экрана*/
 	left: 0;/*выравневание по левой части экрана*/
 	width: 100%;/*всегда занимает 100% ширины экрана*/
+	transition: .2s linear; /*переход к header проходил плавно*/
+	padding-bottom: 20px;
+	z-index: 999; /*чтобы гарантированно всегда был поверх других слоев*/
+}
+.header_active{
+	background: #0E1D28;
 }
 .header__wrapper{
 	display: flex;
@@ -852,3 +858,28 @@ img{
 	background: #0b73f1;
 }
 /*Top places style end*/
+
+/*Videos style start*/
+.videos{
+	width: 100%;
+}
+
+.videos__wrapper{
+	max-width: 1440px; /*ограничили ширину*/
+	margin: 0 auto; /*выровняли по центру*/
+	position: relative;
+}
+
+.video__item{
+	/*высота pd-t расчитывается относительно ширины блока, для адаптивной верстки видео, для сохранения пропорций 16х9, чтобы убрать полосы у видео*/
+	padding-top: 56.25%; /*расчет при 16=100%, 9=х%*/
+}
+
+.video__element{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/*Videos style end*/

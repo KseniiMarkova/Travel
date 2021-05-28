@@ -396,8 +396,18 @@
 				</div>
 			</div>
 		</section>
-
 		<!-- Top places end -->
+
+		<!--Videos start-->
+		<div class="videos">
+			<div class="videos__wrapper"> <!--высота как у дочерних элементов(как у video_item)-->
+				<div class="video__item"></div>
+				<iframe class="video__element" src="https://www.youtube.com/embed/Gb0TQ7VeApY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
+		<!--Videos end-->
 	</main>
+	<!-- js не должен блокировать отрисовку страницы, потому вызываем функцию в самом конце -->
+	<script src="./js/main.js"></script>
 </body>
 </html>
