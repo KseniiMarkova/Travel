@@ -13,3 +13,19 @@
 		}
 	};
 }());/*самовызывающаяся функция, которая отработает как только распарсится js*/
+
+// Burger handler
+
+(function () {
+	const burgerItem = document.querySelector('.burger');
+	const menu = document.querySelector('.header__nav');
+	const menuCloseItem = document.querySelector('.header__nav-close');
+	// обработчик события открыть меню('событие которое хотим прослушивать')
+	burgerItem.addEventListener ('click', () => {
+		menu.classList.add('header__nav_active');
+	});
+	// обработчик события закрыть меню (при нажатии на крестик)
+	menuCloseItem.addEventListener('click', () => {
+		menu.classList.remove('header__nav_active');
+	});
+}());
