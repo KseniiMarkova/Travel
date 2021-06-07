@@ -3,34 +3,46 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--для корректной адаптации под разные экраны-->
 	<title>Discover Amazing places in Japan</title>
+	<meta name="description" content=""> <!--Прописывается информация для поиска-->
+	<!--для корректного отображения информации в ссылках на сайт используется Open Graph
+	для простого администрирования можно использовать textolite, например для изменения текста на сайте-->
+	<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="/img/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-	<!-- Header start -->
+<!-- Header start -->
 	<header class="header">
 		<div class="wrapper">
 			<div class="header__wrapper">
 				<div class="header__logo">
 					<a href="/" class="header__logo-link">
-						<img src="./img/svg/odigo-logo.svg" alt="Discover Amazing places in Japan" class="header__logo-pic">
+						<img src="../img/svg/odigo-logo.svg" alt="Discover Amazing places in Japan" class="header__logo-pic">
 					</a>
 			   </div>
 	
 			   <nav class="header__nav">
 				   <ul class="header__list">
 					   <li class="header__item">
-						   <a href="#!" class="header__link">Articles</a> <!-- #! заглушка для ссылки, чтобы не пробрасывало в начало страницы ставим "!" -->
+						   <a href="#articles" class="header__link js-scroll">Articles</a> <!-- #! заглушка для ссылки, чтобы не пробрасывало в начало страницы ставим "!" -->
 					   </li>
 						<li class="header__item">
-							<a href="#!" class="header__link">Locations</a>
+							<a href="#locations" class="header__link js-scroll">Locations</a>
 						</li>
 						<li class="header__item">
-							<a href="#!" class="header__link">Videos</a>
+							<a href="#videos" class="header__link js-scroll">Videos</a>
 						</li>
 						<li class="header__item">
-							<a href="#!" class="header__link">Sign in</a>
+							<a href="#sing-in" class="header__link js-scroll">Sign in</a>
 						</li>
 				   </ul>
 
@@ -48,11 +60,11 @@
 			</div>
 		</div> 
 	</header>
-	<!-- Header end -->
+<!-- Header end -->
 
 	<main class="main">
-		<!-- Intro start -->
-		<section class="intro">
+<!-- Intro start -->
+		<div class="intro" id="sing-in">
 			<div class="wrapper">
 				<h1 class="intro__title">
 					Discover Amazing places in Japan
@@ -70,9 +82,10 @@
 					</fieldset>
 				</form>
 			</div>
-		</section>
-		<!-- Intro end -->
-		<!-- Benefits start -->
+		</div>
+<!-- Intro end -->
+
+<!-- Benefits start -->
 		<section class="benefits">
 			<div class="benefits__wrap">
 				<h2 class="benefits__title">
@@ -81,7 +94,7 @@
 				<div class="benefits__cards">
 					<div class="benefits__card">
 						<div class="benefits__card-pic">
-							<img src="./img/svg/church-icon.svg" alt="Welcome to Odigo!" class="benefits__card-thumb">
+							<img src="../img/svg/church-icon.svg" alt="Welcome to Odigo!" class="benefits__card-thumb">
 						</div>
 						<h3 class="benefits__card-title">
 							Welcome to Odigo!
@@ -96,7 +109,7 @@
 
 					<div class="benefits__card">
 						<div class="benefits__card-pic">
-							<img src="./img/svg/person-icon.svg" alt="Your Personal Japan Guide" class="benefits__card-thumb">
+							<img src="../img/svg/person-icon.svg" alt="Your Personal Japan Guide" class="benefits__card-thumb">
 						</div>
 						<h3 class="benefits__card-title">
 							Your Personal Japan Guide
@@ -111,7 +124,7 @@
 
 					<div class="benefits__card">
 						<div class="benefits__card-pic">
-							<img src="./img/svg/building-icon.svg" alt="Promoting Local Businesses" class="benefits__card-thumb">
+							<img src="../img/svg/building-icon.svg" alt="Promoting Local Businesses" class="benefits__card-thumb">
 						</div>
 						<h3 class="benefits__card-title">
 							Promoting Local Businesses
@@ -125,12 +138,11 @@
 					</div>
 				</div>
 			</div>
-
 		</section>
-		<!-- Benefits end-->
+<!-- Benefits end-->
 
-		<!-- Places start -->
-		<section class="places">
+<!-- Places start -->
+		<section class="places" id="articles">
 			<div class="wrapper-full">
 				<div class="places__caption">
 					<h2 class="places__title section-title">
@@ -142,7 +154,7 @@
 				<div class="places__cards">
 
 					<figure class="places__card places__card-size-lg">
-						<img src="./img/mount-fuji.jpg" alt="Mount Fuji" class="places__card-pic places__card-pic-size-lg">
+						<img src="../img/mount-fuji.jpg" alt="Mount Fuji" class="places__card-pic places__card-pic-size-lg">
 						<figcaption class="places__card-title">
 							Mount Fuji
 						</figcaption>
@@ -150,7 +162,7 @@
 					</figure>
 
 					<figure class="places__card places__card-size-lg">
-						<img src="./img/kyoto.jpg" alt="Kyoto" class="places__card-pic places__card-pic-size-lg">
+						<img src="../img/kyoto.jpg" alt="Kyoto" class="places__card-pic places__card-pic-size-lg">
 						<figcaption class="places__card-title">
 							Kyoto
 						</figcaption>
@@ -158,7 +170,7 @@
 					</figure>
 
 					<figure class="places__card places__card-size-sm">
-						<img src="./img/tokyo.jpg" alt="Tokyo" class="places__card-pic places__card-pic-size-sm">
+						<img src="../img/tokyo.jpg" alt="Tokyo" class="places__card-pic places__card-pic-size-sm">
 						<figcaption class="places__card-title">
 							Tokyo
 						</figcaption>
@@ -166,7 +178,7 @@
 					</figure>
 
 					<figure class="places__card places__card-size-sm">
-						<img src="./img/niigata.jpg" alt="Niigata" class="places__card-pic places__card-pic-size-sm">
+						<img src="../img/niigata.jpg" alt="Niigata" class="places__card-pic places__card-pic-size-sm">
 						<figcaption class="places__card-title">
 							Niigata
 						</figcaption>
@@ -174,7 +186,7 @@
 					</figure>
 
 					<figure class="places__card places__card-size-sm">
-						<img src="./img/sapporo.jpg" alt="Sapporo" class="places__card-pic places__card-pic-size-sm">
+						<img src="../img/sapporo.jpg" alt="Sapporo" class="places__card-pic places__card-pic-size-sm">
 						<figcaption class="places__card-title">
 							Sapporo
 						</figcaption>
@@ -183,15 +195,15 @@
 				</div>
 			</div>
 		</section>
-		<!-- Places end -->
+<!-- Places end -->
 
-		<!-- Tours start -->
+<!-- Tours start -->
 		<div class="tours">
 			<div class="wrapper-full">
 
 				<div class="tours__tour tour">
 					<div class="tour__pic">
-						<img src="./img/prefecture.jpg" alt="Prefecture in Focus: Tottori" class="tour_thumb">
+						<img src="../img/prefecture.jpg" alt="Prefecture in Focus: Tottori" class="tour_thumb">
 					</div>
 					<div class="tour__info">
 						<h3 class="tour__title">
@@ -218,18 +230,17 @@
 							VIEW PREFECTURE
 						</a>
 					</div>
-					<div class="tour__pic">
-						<img src="./img/neighborhood.jpg" alt="Featured Neighborhood: Kyoto’s Arashiyama" class="tour_thumb">
+					<div class="tour__pic tour__pic_mob-first">
+						<img src="../img/neighborhood.jpg" alt="Featured Neighborhood: Kyoto’s Arashiyama" class="tour_thumb">
 					</div>					
 				</div>
 
 			</div>
 		</div>
-		<!-- Tours end -->
+<!-- Tours end -->
 
-		<!-- Top places start -->
-
-		<section class="top">
+<!-- Top places start -->
+		<section class="top" id="locations">
 			<div class="wrapper-full"> <!--Ограничитель контента-->
 				<h2 class="top__title section-title">
 					Today top places to visit
@@ -240,7 +251,7 @@
 					<div class="top__card">
 					 <!--контейнер для отдельной карточки-->
 						<div class="top__card-pic">
-							<img src="./img/top-pic-nagoya.jpg" alt="NAGOYA" class="top__card-thumb">
+							<img src="../img/top-pic-nagoya.jpg" alt="NAGOYA" class="top__card-thumb">
 							<div class="top__card-stats">
 								<h3 class="top__card-title">
 									NAGOYA
@@ -268,7 +279,7 @@
 					<div class="top__card">
 						<!--контейнер для отдельной карточки-->
 						 <div class="top__card-pic">
-							 <img src="./img/top-pic-nigata.jpg" alt="NIIGATA" class="top__card-thumb">
+							 <img src="../img/top-pic-nigata.jpg" alt="NIIGATA" class="top__card-thumb">
 							 <div class="top__card-stats">
 								 <h3 class="top__card-title">
 									NIIGATA
@@ -296,7 +307,7 @@
 					 <div class="top__card">
 						<!--контейнер для отдельной карточки-->
 						 <div class="top__card-pic">
-							 <img src="./img/top-pic-osaka.jpg" alt="OSAKA" class="top__card-thumb">
+							 <img src="../img/top-pic-osaka.jpg" alt="OSAKA" class="top__card-thumb">
 							 <div class="top__card-stats">
 								 <h3 class="top__card-title">
 									OSAKA
@@ -324,7 +335,7 @@
 					 <div class="top__card">
 						<!--контейнер для отдельной карточки-->
 						 <div class="top__card-pic">
-							 <img src="./img/top-pic-saitama.jpg" alt="SAITAMA" class="top__card-thumb">
+							 <img src="../img/top-pic-saitama.jpg" alt="SAITAMA" class="top__card-thumb">
 							 <div class="top__card-stats">
 								 <h3 class="top__card-title">
 									SAITAMA
@@ -352,7 +363,7 @@
 					 <div class="top__card">
 						<!--контейнер для отдельной карточки-->
 						 <div class="top__card-pic">
-							 <img src="./img/top-pic-ueno.jpg" alt="UENO" class="top__card-thumb">
+							 <img src="../img/top-pic-ueno.jpg" alt="UENO" class="top__card-thumb">
 							 <div class="top__card-stats">
 								 <h3 class="top__card-title">
 									UENO
@@ -380,7 +391,7 @@
 					 <div class="top__card">
 						<!--контейнер для отдельной карточки-->
 						 <div class="top__card-pic">
-							 <img src="./img/top-pic-shibuya.jpg" alt="SHIBUYA" class="top__card-thumb">
+							 <img src="../img/top-pic-shibuya.jpg" alt="SHIBUYA" class="top__card-thumb">
 							 <div class="top__card-stats">
 								 <h3 class="top__card-title">
 									SHIBUYA
@@ -407,23 +418,23 @@
 				</div>
 			</div>
 		</section>
-		<!-- Top places end -->
+<!-- Top places end -->
 
-		<!--Videos start-->
-		<div class="videos">
+<!--Videos start-->
+		<div class="videos" id="videos">
 			<div class="videos__wrapper"> <!--высота как у дочерних элементов(как у video_item)-->
 				<div class="video__item"></div>
-				<iframe class="video__element" src="https://www.youtube.com/embed/Gb0TQ7VeApY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe class="video__element" src="https://www.youtube.com/embed/Gb0TQ7VeApY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
-		<!--Videos end-->
+<!--Videos end-->
 	</main>
 
 	<footer class="footer">
 		<div class="wrapper">
 			<div class="footer__item">
 				<div class="footer__logo">
-					<img src="./img/svg/odigo-logo-footer.svg" alt="Discover Amazing places in Japan" class="footer__logo-pic">
+					<img src="../img/svg/odigo-logo-footer.svg" alt="Discover Amazing places in Japan" class="footer__logo-pic">
 				</div>
 
 				<nav class="footer__nav"> <!--создание меню-->
@@ -486,7 +497,7 @@
 		</div>
 	</footer>
 
-	<!-- js не должен блокировать отрисовку страницы, потому вызываем функцию в самом конце -->
+<!-- js не должен блокировать отрисовку страницы, потому вызываем функцию в самом конце -->
 	<script src="./js/main.js"></script>
 </body>
 </html>

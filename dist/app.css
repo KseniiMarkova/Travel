@@ -379,8 +379,8 @@ textarea {
 	font-style: normal;
 	font-weight: 400;
 	src: local(''),
-		 url('../fonts/lato-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-		 url('../fonts/lato-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+		 url(65e877e527022735c1a1.woff2) format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		 url(319df0f5492062b546b0.woff) format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* lato-700 - latin */
   @font-face {
@@ -388,8 +388,8 @@ textarea {
 	font-style: normal;
 	font-weight: 700;
 	src: local(''),
-		 url('../fonts/lato-v17-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-		 url('../fonts/lato-v17-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+		 url(f1405bd8a987c2ea8a67.woff2) format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		 url(a354bb0b0b0f22de7bef.woff) format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* lato-900 - latin */
   @font-face {
@@ -397,8 +397,8 @@ textarea {
 	font-style: normal;
 	font-weight: 900;
 	src: local(''),
-		 url('../fonts/lato-v17-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-		 url('../fonts/lato-v17-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+		 url(f33015cf2124b2046860.woff2) format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		 url(22f1d97be275c94e30d7.woff) format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 /*НАСТРОЙКА БЛОКОВ ДЛЯ ПРАВИЛЬНОЙ РАБОТЫ padding без изменения размера блоков START*/
 html{
@@ -542,7 +542,7 @@ img{
 /*Intro style start*/
 .intro{
 	min-height: 100vh; /*высота = 100% высоты экрана, для последующей адаптивности*/
-	background: url(../img/intro-bg.jpg) no-repeat center; /*не будет повторяться и по центру*/
+	background: url(836b047dfb232415b9ad.jpg) no-repeat center; /*не будет повторяться и по центру*/
 	background-size: cover; /*картинка будет покрывать блок при любых его размерах*/
 	padding-top: 263px;
 	padding-bottom: 223px; /*обезопасили контент заголовка benefits от перекрытия контентом intro*/
@@ -572,7 +572,7 @@ img{
 .search-form__field{
 	width: 297px;
 	/*background-color: transparent; - обнуление background-color, при этом можно передавать сразу в background*/
-	background: transparent url(../img/svg/circle-icon.svg) no-repeat left 6px;
+	background: transparent url(8947f44bed0a5c3a7e3c.svg) no-repeat left 6px;
 	background-size: 20px;
 	border: 0;
 	border-bottom: 2px solid #BFC0C5;
@@ -692,13 +692,13 @@ img{
 	line-height: 24px;
 	color: #006DFE;
 	text-decoration: none;/*убрать черту под ссылкой*/
-	background: url(../img/svg/arrow-icon.svg) no-repeat 95% center; /*указан в качестве background, но можно сделать через псевдоэлемент, с анимацией*/
+	background: url(80f85fed4054a52be354.svg) no-repeat 95% center; /*указан в качестве background, но можно сделать через псевдоэлемент, с анимацией*/
 	-webkit-transition: .2s all;
 	-o-transition: .2s all;
 	transition: .2s all; /*делает более плавный сдвиг срелки*/
 }
 .benefits__card-more:hover, .benefits__card-more:focus{
-	background: url(../img/svg/arrow-icon.svg) no-repeat right center;
+	background: url(80f85fed4054a52be354.svg) no-repeat right center;
 }
 /*Benefits style end*/
 
@@ -728,7 +728,7 @@ img{
 	color: #006DFE;
 	text-decoration: none;
 	padding-right: 59px;
-	background: url(../img/svg/arrow-icon.svg) no-repeat right center;
+	background: url(80f85fed4054a52be354.svg) no-repeat right center;
 }
 .places__view-all:hover, .places__view-all:focus{
 	opacity: .65;
@@ -842,7 +842,7 @@ img{
 	color: #006DFE;
 	text-decoration: none;
 	padding-right: 59px;
-	background: url(../img/svg/arrow-icon.svg) no-repeat right center;
+	background: url(80f85fed4054a52be354.svg) no-repeat right center;
 }
 .tour__link:hover, .tour__link:focus{
 	opacity: .65;
@@ -913,7 +913,7 @@ img{
 	line-height: 24px;
 	color: #FFFFFF;
 	padding-right: 20px;
-	background: url(../img/svg/heart-ico.svg) no-repeat right; /*можно через псевдоэлемент*/
+	background: url(1420ac68daabd2854cf3.svg) no-repeat right; /*можно через псевдоэлемент*/
 	margin-right: 14px;
 }
 .top__card-comments{
@@ -922,7 +922,7 @@ img{
 	line-height: 24px;
 	color: #FFFFFF;
 	padding-right: 23px;
-	background: url(../img/svg/comment-ico.svg) no-repeat right;
+	background: url(1c0191c79619d631b2ee.svg) no-repeat right;
 }
 .top__card-desc{
 	font-size: 16px;
@@ -1163,7 +1163,7 @@ img{
 		width: 100%;
 		margin-right: 0;
 		padding-bottom: 12px;
-		background: transparent url(../img/svg/circle-icon.svg) no-repeat left 2px;
+		background: transparent url(8947f44bed0a5c3a7e3c.svg) no-repeat left 2px;
 	}
 	.search-form__field::-webkit-input-placeholder{
 		font-size: 16px;
