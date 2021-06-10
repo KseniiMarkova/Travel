@@ -606,7 +606,7 @@ img{
 .search-form__field::placeholder{
 	font-weight: 500;
 	font-size: 18px;
-	color: white;
+	color: gray	;
 }
 .search-form__submite{
 	padding: 15px 39px;
