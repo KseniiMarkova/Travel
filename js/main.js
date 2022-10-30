@@ -1,4 +1,3 @@
-import '../css/style.css';
 (function () {
 	/*вернет первый элемент с заданным селектором*/
 	const header = document.querySelector('.header');
